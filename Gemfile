@@ -7,10 +7,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 
-gem 'bootstrap-sass', '~> 3.1.1.0'
+gem 'bootstrap-generators', '~> 3.3.4'
 gem 'role-rails'
 gem 'mustache'
-gem 'haml'
+gem 'haml_rails'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'jquery-rails'
@@ -18,7 +18,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'carrierwave'
-
+gem 'therubyracer', platforms: :ruby
 # Use Unicorn as the app server
 # gem 'unicorn'
 
