@@ -2,6 +2,8 @@ AllCops:
   Exclude:
     - vendor/**
     - bin/**
+    - db/**
+    - config/**
     - config/environments/**
 
 Documentation:
