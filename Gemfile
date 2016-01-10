@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-generators', '~> 3.3.4'
 gem 'role-rails'
 gem 'mustache'
-gem 'haml_rails'
+gem 'haml-rails'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'jquery-rails'
@@ -26,6 +26,7 @@ gem 'therubyracer', platforms: :ruby
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'faker'
   gem 'byebug'
   gem 'rspec-rails'
   gem 'capybara'
