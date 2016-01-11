@@ -1,9 +1,9 @@
 default: &default
   adapter: postgresql
   reconnect: true
-  host: db
+  host: localhost
   encoding: utf8
-  username: postgres
+  username: brittanys
   
 development: 
   <<: *default
