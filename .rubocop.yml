@@ -1,10 +1,10 @@
 AllCops:
   Exclude:
-    - vendor/**
-    - bin/**
-    - db/**
-    - config/**
-    - config/environments/**
+    - vendor/**/*
+    - bin/**/*
+    - db/**/*
+    - config/**/*
+    - config/environments/**/*
 
 Documentation:
   # don't require classes to be documented

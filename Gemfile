@@ -32,6 +32,7 @@ group :development, :test do
   gem 'capybara'
   gem 'guard-rubocop', require: false
   gem 'guard-rails', require: false
+  gem 'growl'
   gem 'guard-rspec', require: false
   gem 'ruby_gntp', require: false
   gem 'factory_girl_rails'

@@ -1,4 +1,4 @@
-notification :gntp, sticky: false, host: '10.0.2.2', port: 23_053
+notification :gntp, sticky: false, host: '127.0.0.1', port: 23_053
 
 guard :rspec, cmd: 'bin/rspec' do
   require 'guard/rspec/dsl'
@@ -43,7 +43,7 @@ guard :rspec, cmd: 'bin/rspec' do
 end
 
 guard :rubocop do
-  watch(%r{.+\.rb$})
+  watch(/.+\.rb$/)
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end
 
