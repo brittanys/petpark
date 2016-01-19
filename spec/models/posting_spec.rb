@@ -1,9 +1,5 @@
 require 'rails_helper'
 
 RSpec.describe Posting, type: :model do
-  let(:posting) { create(:posting) }
-  it 'is invalid without a title' do
-    expect(posting).to be_valid
-  end
-  it 'is invalid without a description'
+  pending "add some examples to (or delete) #{__FILE__}"
 end

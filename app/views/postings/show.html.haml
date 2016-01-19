@@ -1,0 +1,14 @@
+.page-header
+  = link_to postings_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_posting_path(@posting), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show posting
+
+%dl.dl-horizontal
+  %dt Title:
+  %dd= @posting.title
+  %dt Description:
+  %dd= @posting.description

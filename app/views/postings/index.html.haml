@@ -1,0 +1,24 @@
+.page-header
+  = link_to new_posting_path, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-plus
+    New Posting
+  %h1 Listing postings
+
+.table-responsive
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th Title
+        %th Description
+        %th
+        %th
+        %th
+
+    %tbody
+      - @postings.each do |posting|
+        %tr
+          %td= posting.title
+          %td= posting.description
+          %td= link_to 'Show', posting
+          %td= link_to 'Edit', edit_posting_path(posting)
+          %td= link_to 'Destroy', posting, data: { confirm: 'Are you sure?' }, method: :delete
