@@ -1,3 +1,4 @@
 class Posting < ActiveRecord::Base
   validates :title, :description, presence: true
+  has_many :images
 end
