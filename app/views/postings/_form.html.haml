@@ -1,4 +1,4 @@
-= form_for @posting, html: { class: "form-horizontal", role: "form" } do |f|
+= form_for @posting, html: { multipart: true, class: "form-horizontal", role: "form" } do |f|
   -if @posting.errors.any?
     .alert.alert-danger.alert-dismissable{role: "alert"}
       %button.close{type: "button", data: {dismiss: "alert"} }
@@ -18,6 +18,14 @@
     = f.label :description, class: 'col-sm-2 control-label'
     .col-sm-10
       = f.text_area :description, class: 'form-control'
+  .form-group
+    - f.fields_for :images do |f_image|
+      - f_image.label :name, class: 'col-sm-2 control-label' do 
+        .col-sm-10
+          = f_image.file_field :name, name: 'posting[image_attributes][]', multiple: true
+  - if params[:controller] == 'post' && params[:action] == 'edit'
+    - @posting.images.each do |p|
+      = image_tag p.name.thumb
   .form-group
     .col-sm-offset-2.col-sm-10
       = f.submit class: 'btn btn-primary'

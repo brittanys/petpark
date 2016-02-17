@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.3'
-gem 'activeadmin', github: 'activeadmin'
+gem 'rails', '4.2.5'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -20,6 +19,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'therubyracer', platforms: :ruby
+gem 'devise'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -27,7 +27,8 @@ gem 'therubyracer', platforms: :ruby
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'faker'
+  gem 'rubycritic', require: false
+  gem 'faker', require: false
   gem 'byebug'
   gem 'rspec-rails'
   gem 'capybara'

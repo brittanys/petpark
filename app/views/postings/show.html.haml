@@ -12,3 +12,7 @@
   %dd= @posting.title
   %dt Description:
   %dd= @posting.description
+  %dt Images
+  - @posting.images.each do |i|
+    %dd= i.name
+
