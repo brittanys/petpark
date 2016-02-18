@@ -25,6 +25,9 @@ gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :test do
+  gem 'codeclimate-test-reporter', require: nil
+end
 
 group :development, :test do
   gem 'rubycritic', require: false

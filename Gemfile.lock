@@ -68,6 +68,8 @@ GEM
       mime-types (>= 1.16)
     codeclimate-engine-rb (0.1.0)
       virtus (~> 1.0)
+    codeclimate-test-reporter (0.4.8)
+      simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.0)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
@@ -94,6 +96,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     elasticsearch (1.0.15)
       elasticsearch-api (= 1.0.15)
       elasticsearch-transport (= 1.0.15)
@@ -306,6 +309,11 @@ GEM
       rdoc (~> 4.0)
     sexp_processor (4.6.0)
     shellany (0.0.1)
+    simplecov (0.11.2)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     slop (3.6.0)
     spring (1.6.2)
     sprockets (3.5.2)
@@ -360,6 +368,7 @@ DEPENDENCIES
   byebug
   capybara
   carrierwave
+  codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
   devise
   elasticsearch-model
