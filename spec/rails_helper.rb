@@ -2,8 +2,11 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'spec_helper'
 require 'rspec/rails'
+require 'codeclimate-test-reporter'
 ActiveRecord::Migration.maintain_test_schema!
 RSpec.configure do |config|
+
+  CodeClimate::TestReporter.start
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
